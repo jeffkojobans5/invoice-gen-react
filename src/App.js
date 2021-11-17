@@ -117,7 +117,8 @@ function App() {
 
   React.useEffect(()=> {
     fetchCurrency()
-  },[currency])
+    // eslint-disable-next-line
+  },[])
 
   return (
     <div className="sm:w-4/6 mx-auto  mb-10 pt-8 flex flex-col justify-center items-start lg:flex-row full">
